@@ -1,0 +1,38 @@
+{
+    "id": "dc41614f-7dd3-46db-b990-1dc74d1b009e",
+    "name": "vsts-replacer-task",
+    "friendlyName": "Replace WebDeploy Parameters",
+    "description": "",
+    "helpMarkDown": "",
+    "category": "Utility",
+    "author": "Lars Haupt-Hansen",
+    "version": {
+        "Major": 1,
+        "Minor": 0,
+        "Patch": 0
+    },
+    "instanceNameFormat": "Replace parameters: $(parameterFile)", 
+    "groups": [
+        {
+            "name": "advanced",
+            "displayName": "Advanced",
+            "isExpanded": false
+        }
+    ],
+    "inputs": [ 
+         {  
+             "name": "parameterFile",  
+             "type": "filePath",  
+             "label": "Path to .setparameters.xml",  
+             "defaultValue":"",  
+             "required":true, 
+             "helpMarkDown": ""  
+         }
+
+     ], 
+    "execution": {
+        "Node": {
+            "target": "index.js"
+        }
+    }
+}
