@@ -1,6 +1,6 @@
 import tl = require('vsts-task-lib/task');
 import trm = require('vsts-task-lib/toolrunner');
-import mod = require('./taskmod');
+import replacertask = require('./replacertask');
 
 async function run() {
     try {
@@ -8,21 +8,21 @@ async function run() {
         let tool: trm.ToolRunner;
         if (process.platform == 'win32') {
             let cmdPath = tl.which('cmd');
-            tool = tl.tool(cmdPath).arg('/c').arg('echo ' + tl.getInput('samplestring', true));
         }
         else {
             let echoPath = tl.which('echo');
-            tool = tl.tool(echoPath).arg(tl.getInput('samplestring', true));
         }
 
-        let rc1: number = await tool.exec();
+        //let rc1: number = await tool.exec();
         
         // call some module which does external work
-        if (rc1 == 0) {
-            mod.sayHello();
-        }
         
-        console.log('Task done! ' + rc1);
+        var fileGlob:string = tl.getInput("parameterFile", true);
+
+        replacertask.replaceParameters(fileGlob);
+        
+        
+        console.log('Task done! ');
     }
     catch (err) {
         tl.setResult(tl.TaskResult.Failed, err.message);
