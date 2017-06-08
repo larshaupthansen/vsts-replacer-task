@@ -4,7 +4,8 @@
   "description": "Replacing webdeploy parameters in VisualStudio online",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "test": "tsc && mocha dist/tests/suite.js "
   },
   "author": "",
   "license": "ISC",

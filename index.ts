@@ -15,10 +15,9 @@ async function run() {
 
         //let rc1: number = await tool.exec();
         
-        // call some module which does external work
-        
+        // call some module which does external work        
         var fileGlob:string = tl.getInput("parameterFile", true);
-
+        
         replacertask.replaceParameters(fileGlob);
         
         
