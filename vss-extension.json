@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "vsts-replace-setparameters",
     "name": "Replace Set Parameters",
-    "version": "0.9.4",
+    "version": "0.9.8",
     "publisher": "iteradk",
     "targets": [
         {
@@ -14,8 +14,8 @@
         "Integrate"
     ],
     "//uncomment 'icons' below to include a custom icon": "",
-    "//icons": {
-        "default": "images/extension-icon.png"
+    "icons": {
+        "default": "images/icon.png"
     },
     "files": [
         {           
