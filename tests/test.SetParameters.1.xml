@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <setParameter name="IIS Web Application Name" value="__WebAppName__" />
+  <setParameter name="MarkedsindexFile" value="__WebAppName__" />
+  <setParameter name="FindServiceUrl" value="__WebAppName__" />
+  <setParameter name="FindDefaultIndex" value="__WebAppName__" />
+  <setParameter name="EpiserverGeoDataFile" value="__WebAppName__" />
+  <setParameter name="EpiserverAppData" value="__WebAppName__" />
+  <setParameter name="Debug" value="__WebAppName__" />
+  <setParameter name="WebserviceUrl" value="__WebAppName__" />
+  <setParameter name="WebserviceOAuthUrl" value="__WebAppName__" />
+  <setParameter name="WebserviceClientId" value="__WebAppName__" />
+  <setParameter name="WebservicePassword" value="__WebservicePassword__" />
+  <setParameter name="EPiServerDB-Web.config Connection String" value="__EPISERVERDB__" />
+  <setParameter name="MeasurementEntities-Web.config Connection String" value="__MEASUREMENT__" />
+</parameters>

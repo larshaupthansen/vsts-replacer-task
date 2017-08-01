@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "vsts-replace-setparameters",
     "name": "Replace Set Parameters",
-    "version": "0.9.8",
+    "version": "0.9.14",
     "publisher": "iteradk",
     "targets": [
         {

@@ -10,7 +10,7 @@
 
     "predist": "npm run clean",
     "dist": "npm run build",
-    "postdist": "node build/copy-assets.js",
+    "postdist": "node build/copy-assets.js && tfx extension publish --manifest-globs vss-extension.json --share-with itera-dk --rev-version",
     
     "pretest": "npm run build",
     "test": "mocha dist/tests/suite.js"
